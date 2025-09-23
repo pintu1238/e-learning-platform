@@ -1,0 +1,412 @@
+
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .all_courses {
+    .inner_area {
+      .header {
+        h3 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .select_courses_area {
+      padding: 30px 0;
+    }
+    .courses_area {
+      padding: 30px 0;
+    }
+  }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+  .all_courses {
+    .inner_area {
+      .header {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .select_courses_area {
+      padding: 30px 0;
+    }
+    .courses_area {
+      padding: 30px 0;
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+  .all_courses {
+    .inner_area {
+      .header {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .select_courses_area {
+      padding: 30px 0;
+    }
+    .courses_area {
+      padding: 30px 0;
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+  .all_courses {
+    .inner_area {
+      .header {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .select_courses_area {
+      padding: 25px 0;
+    }
+    .courses_area {
+      padding: 25px 0;
+    }
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+  .all_courses {
+    .inner_area {
+      .header {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .select_courses_area {
+      padding: 25px 0;
+    }
+    .courses_area {
+      padding: 25px 0;
+    }
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+  .all_courses {
+    .inner_area {
+      .header {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .select_courses_area {
+      padding: 25px 0;
+    }
+    .courses_area {
+      padding: 25px 0;
+    }
+  }
+}
+
+.all_courses {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    color: #000;
+    transition: all 0.3s ease;
+
+    &:after {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  margin-bottom: 70px;
+
+  .inner_area {
+    .header {
+      margin-bottom: 10px;
+      h3 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+
+    /* ---- Main Tabs ---- */
+    .tab_navigation {
+      min-height: 20px;
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 20px;
+          transition: all 0.35s ease-in-out;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .tab {
+            border: none;
+            background: transparent;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(170, 171, 182);
+            cursor: pointer;
+            padding: 6px 0;
+            position: relative;
+            transition: all 0.35s ease;
+
+            &:hover {
+              color: #000;
+            }
+
+            &.active {
+              color: #000;
+
+              &:after {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .select_courses_area {
+    margin-top: 10px;
+    background-color: rgb(246, 247, 249);
+
+    .inner_area_two {
+      padding: 20px 0;
+
+      /* ---- Sub-course tags ---- */
+      .skill_tags {
+        .skill_tag {
+          display: inline-block;
+          padding: 6px 14px;
+          background-color: rgb(233, 234, 242);
+          border-radius: 12px;
+          border: none;
+          cursor: pointer;
+          margin-right: 15px;
+          margin-bottom: 10px;
+          transition: all 0.35s ease-in-out;
+          text-align: left;
+
+          h3 {
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          p {
+            color: black;
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          &:hover {
+            background-color: gray;
+            color: white;
+            transform: translateY(-6px) scale(1.03);
+
+            h3,
+            p {
+              color: white;
+            }
+          }
+
+          &.active {
+            background-color: #000;
+            h3,
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+
+      /* ---- Course Cards ---- */
+      .courses_area {
+        padding-top: 40px;
+
+        .course_card {
+          border-radius: 16px;
+          margin-bottom: 20px;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.85);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 20px;
+          backdrop-filter: blur(8px);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+          transition: all 0.35s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-5px) scale(0.95);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2),
+              0 0 20px rgba(58, 123, 213, 0.6);
+            border: 1px solid rgba(58, 123, 213, 0.8);
+            // background-color: rgb(51, 42, 77);
+            // color: #fff;
+
+            h3,
+            p {
+              color: #fff;
+            }
+          }
+
+          .course_image {
+            border-radius: 12px;
+            overflow: hidden;
+            width: 100%;
+          }
+
+          .course_content {
+            padding: 10px 15px;
+            h3 {
+              font-size: 18px;
+              font-weight: 600;
+              color: #000;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              color: #333;
+            }
+
+            .review {
+              ul {
+                li {
+                  display: inline-block;
+                  margin-right: 10px;
+                  color: goldenrod;
+
+                  &:last-child {
+                    margin-right: 0;
+                    color: black;
+                  }
+                }
+              }
+            }
+
+            .price {
+              h3 {
+                display: inline-block;
+                font-size: 14px;
+                margin-right: 10px;
+              }
+              p {
+                display: inline-block;
+                font-size: 14px;
+                text-decoration: line-through;
+                color: grey;
+              }
+            }
+
+            .s {
+              h3 {
+                padding: 8px 12px;
+                color: rgb(15, 85, 102);
+                background-color: rgb(194, 233, 235);
+                border-radius: 15px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        .all_page {
+          margin-top: 20px;
+          a {
+            padding: 15px 25px;
+            border-radius: 8px;
+            background-color: white;
+            color: blueviolet;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: white;
+              background-color: rgb(86, 114, 174);
+              transform: translateY(-8px) scale(1.03);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

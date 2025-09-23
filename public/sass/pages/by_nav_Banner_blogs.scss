@@ -1,0 +1,307 @@
+section.Bannner {
+    background-color: #f6f9fb;
+
+    div.inner {
+        min-height: 300px;
+        height: 100%;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div.contant {
+            width: 750px;
+
+            h3.head {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 16px;
+                color: black;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            h1.heading {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 48px;
+                color: black;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            p.heading_description {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 16px;
+                color: black;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+section.info {
+    div.inner_info {
+        padding: 30px 0;
+        width: 750px;
+        margin: 0 auto;
+
+        div.left {
+            width: calc(100% - 430px);
+            float: left;
+
+            p.info_p {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 16px;
+                color: black;
+                font-weight: 400;
+                margin-bottom: 12px;
+            }
+        }
+
+        div.right {
+            width: 430px;
+            float: right;
+        }
+
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.Bannner div.inner {
+        padding: 40px 0;
+    }
+
+    section.Bannner div.inner div.contant {
+        width: 700px;
+    }
+
+    section.info div.inner_info {
+        width: 700px;
+    }
+
+    section.Bannner div.inner div.contant h3.head {
+        margin-bottom: 14px;
+        font-size: 15px;
+    }
+
+    section.Bannner div.inner div.contant h1.heading {
+        margin-bottom: 14px;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    section.Bannner div.inner div.contant p.heading_description {
+        font-size: 15px;
+    }
+
+    section.info div.inner_info div.right {
+        width: 300px;
+    }
+
+    section.info div.inner_info div.left {
+        width: calc(100% - 300px);
+    }
+
+    section.Bannner div.inner {
+        min-height: 250px;
+        padding: 40px 0;
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    section.Bannner div.inner {
+        min-height: 200px;
+        padding: 30px 0;
+    }
+
+    section.Bannner div.inner div.contant {
+        width: 100%;
+    }
+
+    section.info div.inner_info {
+        width: 100%;
+    }
+
+    section.Bannner div.inner div.contant h3.head {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    section.Bannner div.inner div.contant h1.heading {
+        margin-bottom: 14px;
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    section.Bannner div.inner div.contant p.heading_description {
+        font-size: 14px;
+    }
+
+    section.info div.inner_info div.right {
+        width: 350px;
+    }
+
+    section.info div.inner_info div.left {
+        width: calc(100% - 350px);
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    section.Bannner div.inner {
+        min-height: 170px;
+        padding: 30px 0;
+    }
+
+    section.Bannner div.inner div.contant {
+        width: 100%;
+    }
+
+    section.info div.inner_info {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    section.Bannner div.inner div.contant h3.head {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    section.Bannner div.inner div.contant h1.heading {
+        margin-bottom: 14px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    section.Bannner div.inner div.contant p.heading_description {
+        font-size: 14px;
+    }
+
+    section.info div.inner_info div.right {
+        display: none;
+    }
+
+    section.info div.inner_info {
+        display: block;
+    }
+
+    section.info div.inner_info div.left {
+        float: none;
+        width: 100%;
+    }
+
+    section.info div.inner_info div.left p.info_p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    section.Bannner div.inner {
+        min-height: 150px;
+        padding: 25px 0;
+    }
+
+    section.Bannner div.inner div.contant {
+        width: 100%;
+    }
+
+    section.info div.inner_info {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    section.Bannner div.inner div.contant h3.head {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    section.Bannner div.inner div.contant h1.heading {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    section.Bannner div.inner div.contant p.heading_description {
+        font-size: 14px;
+    }
+
+    section.info div.inner_info div.right {
+        display: none;
+    }
+
+    section.info div.inner_info {
+        display: block;
+    }
+
+    section.info div.inner_info div.left {
+        float: none;
+        width: 100%;
+    }
+
+    section.info div.inner_info div.left p.info_p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    section.Bannner div.inner {
+        min-height: 150px;
+        padding: 25px 0;
+    }
+
+    section.Bannner div.inner div.contant {
+        width: 100%;
+    }
+
+    section.info div.inner_info {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    section.Bannner div.inner div.contant h3.head {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    section.Bannner div.inner div.contant h1.heading {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    section.Bannner div.inner div.contant p.heading_description {
+        font-size: 14px;
+    }
+
+    section.info div.inner_info div.right {
+        display: none;
+    }
+
+    section.info div.inner_info {
+        display: block;
+    }
+
+    section.info div.inner_info div.left {
+        float: none;
+        width: 100%;
+    }
+
+    section.info div.inner_info div.left p.info_p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}

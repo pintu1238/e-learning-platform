@@ -1,0 +1,66 @@
+section.Bannner {
+    background-color: #f6f9fb;
+
+    div.inner {
+        min-height: 280px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div.contant {
+            width: 750px;
+
+            h3.head {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 16px;
+                color: black;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            h1.heading {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 48px;
+                color: black;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            p.heading_description {
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 16px;
+                color: black;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+section.info {
+    div.inner_info {
+        width: 750px;
+        margin: 0 auto;
+        div.left{
+            width: calc(100% - 430px);
+            float: left;
+            p.info_p{
+                font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 16px;
+                color: black;
+                font-weight: 400;
+                margin-bottom: 12px;
+            }
+        }
+        div.right{
+            width: 430px;
+            float: right;
+        }
+        &::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}

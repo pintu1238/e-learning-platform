@@ -1,0 +1,501 @@
+.sectionfour {
+  padding: 40px 0;
+  background: #f9f9fb;
+
+  .inner_area {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+
+    .left_area {
+      width: 600px;
+      .course_card {
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .image_area {
+          height: 250px;
+          width: 100%;
+          border-radius: 12px;
+          padding-bottom: 20px;
+          overflow: hidden;
+        }
+        .course_title {
+          font-size: 22px;
+          font-weight: 600;
+          padding-bottom: 10px;
+        }
+
+        .course_desc {
+          font-size: 15px;
+          color: #555;
+          padding-bottom: 15px;
+        }
+
+        .instructor {
+          font-size: 14px;
+          font-weight: 500;
+          padding-bottom: 20px;
+          color: #333;
+        }
+
+        .course_info {
+          margin-bottom: 10px;
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            list-style: none;
+
+            li {
+              font-size: 14px;
+              color: #333;
+              background: #f7f7f7;
+              // padding: 8px 10px;
+              padding: 5px;
+              border-radius: 20px;
+              border: 1px solid #ddd;
+
+              &.badge {
+                background: #ff5722;
+                color: #fff;
+                font-weight: 600;
+                // padding: 8px 12px;
+              }
+
+              &.rating {
+                font-weight: 600;
+                color: gold;
+              }
+            }
+          }
+        }
+
+        .update {
+          font-size: 13px;
+          color: #777;
+          padding-bottom: 15px;
+        }
+
+        .price {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .discounted {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e63946;
+          }
+
+          .original {
+            font-size: 15px;
+            text-decoration: line-through;
+            color: #777;
+          }
+        }
+      }
+    }
+
+    .right_area {
+      width: calc(100% - 600px);
+
+      .content_heading {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .course_content {
+        .accordion-item {
+          border-radius: 8px;
+          margin-bottom: 10px;
+          overflow: hidden;
+          border: 1px solid #e2e2e2;
+
+          .accordion-header {
+            button {
+              font-weight: 600;
+              color: #333;
+              background: #fff;
+              box-shadow: none;
+            }
+          }
+
+          .accordion-body {
+            font-size: 14px;
+            color: #555;
+            ul {
+              margin: 0;
+              padding-left: 18px;
+
+              li {
+                margin-bottom: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .career_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+    margin: 0 auto;
+
+    .left_area {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      flex: 1;
+
+      .icon_box {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+
+      .text_box {
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: bold;
+          color: #222;
+        }
+
+        p {
+          margin: 8px 0;
+          font-size: 14px;
+          color: #555;
+        }
+
+        .social_icons {
+          margin-top: 10px;
+
+          a {
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 12px;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .right_area {
+      text-align: left;
+      flex: 0.6;
+
+      h3 {
+        font-size: 18px;
+        margin: 0 0 12px;
+        color: #222;
+      }
+
+      .action_row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+
+        .btn {
+          background: #7b2ff7;
+          color: white;
+          padding: 10px 18px;
+          border-radius: 6px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          transition: background 0.3s;
+
+          &:hover {
+            background: #5a0ecc;
+          }
+        }
+
+        .price {
+          font-size: 18px;
+          font-weight: bold;
+          color: #222;
+        }
+      }
+
+      .learners {
+        font-size: 13px;
+        color: #555;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 620px;
+      }
+      .right_area {
+        width: calc(100% - 620px);
+      }
+    }
+  }
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 580px;
+      }
+      .right_area {
+        width: calc(100% - 580px);
+      }
+    }
+  }
+}
+
+/* 1400 - 1599 */
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 540px;
+      }
+      .right_area {
+        width: calc(100% - 540px);
+      }
+    }
+  }
+}
+
+/* 1300 only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 500px;
+      }
+      .right_area {
+        width: calc(100% - 500px);
+      }
+    }
+  }
+}
+
+/* 1200 only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 460px;
+      }
+      .right_area {
+        width: calc(100% - 460px);
+      }
+    }
+  }
+}
+
+/* 992 - 1199 */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 400px;
+      }
+      .right_area {
+        width: calc(100% - 400px);
+      }
+    }
+  }
+}
+
+/* 768 - 991 (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sectionfour {
+    .inner_area {
+      .left_area {
+        width: 100%;
+      }
+      .right_area {
+        width: 100%;
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
+      }
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+/* 576 - 767 (small tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .sectionfour {
+    .inner_area {
+      flex-direction: column;
+      gap: 25px;
+
+      .left_area,
+      .right_area {
+        width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .right_area {
+      padding-top: 20px;
+    }
+  }
+}
+
+/* 361 - 575 (phones) */
+@media (min-width: 361px) and (max-width: 575px) {
+  .sectionfour {
+    .inner_area {
+      flex-direction: column;
+      gap: 20px;
+
+      .left_area,
+      .right_area {
+        width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .left_area {
+      .icon_box {
+        display: none;
+      }
+    }
+    .right_area {
+      padding-top: 20px;
+    }
+  }
+}
+
+/* 360 and below */
+@media (max-width: 360px) {
+  .sectionfour {
+    .inner_area {
+      flex-direction: column;
+      gap: 15px;
+
+      .left_area,
+      .right_area {
+        width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .left_area {
+      .icon_box {
+        display: none;
+      }
+    }
+    .right_area {
+      padding-top: 20px;
+    }
+  }
+}
+
+/* 320 and below */
+@media (max-width: 320px) {
+  .sectionfour {
+    .inner_area {
+      flex-direction: column;
+      gap: 12px;
+
+      .left_area,
+      .right_area {
+        width: 100%;
+
+        flex-direction: column;
+
+        .content_heading {
+          width: 100%;
+        }
+
+        .course_content {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .career_card {
+    flex-direction: column;
+
+    .left_area {
+      .icon_box {
+        display: none;
+      }
+    }
+    .right_area {
+      padding-top: 20px;
+    }
+  }
+}

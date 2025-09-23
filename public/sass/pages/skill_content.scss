@@ -1,0 +1,566 @@
+.learn_section {
+  margin-top: 30px;
+
+  .inner_parent {
+    position: relative;
+    margin-bottom: 60px;
+    .left {
+      float: left;
+      // width: 800px;
+      width: 60%;
+
+      .learn_box {
+        border: 1px solid #d1d7dc;
+        padding: 25px;
+        border-radius: 6px;
+        background-color: #fff;
+        margin-bottom: 60px;
+        margin-top: 40px;
+
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          color: #2d2f31;
+        }
+
+        .learn_list {
+          display: flex;
+          gap: 35px;
+
+          ul {
+            flex: 1;
+            padding-left: 20px;
+            margin: 0;
+
+            li {
+              list-style: none;
+              position: relative;
+              margin-bottom: 16px;
+              font-size: 14px;
+              color: #2d2f31;
+              line-height: 1.5;
+              min-height: 65px;
+
+              &::before {
+                content: "✔";
+                position: absolute;
+                left: -20px;
+                color: #2d2f31;
+                font-size: 14px;
+                top: 0;
+              }
+            }
+          }
+        }
+
+        .show_more {
+          margin-top: 20px;
+
+          a {
+            display: inline-block;
+            color: #2d2f31;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            background-color: #f3e9ff;
+            border: 1px solid #f3e9ff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            span {
+              font-size: 12px;
+              margin-left: 6px;
+            }
+
+            &:hover {
+              background-color: #e2d4fa;
+              border-color: #e2d4fa;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .course_info_section {
+        margin-bottom: 60px;
+
+        // .related_topics {
+        //   h4 {
+        //     font-size: 22px;
+        //     font-weight: 700;
+        //     color: #2d2f31;
+        //     margin-bottom: 25px;
+        //   }
+
+        //   .tags {
+        //     ul {
+        //       list-style: none;
+
+        //       li {
+        //         display: inline-block;
+        //         margin-right: 35px;
+
+        //         a {
+        //           color: black;
+        //           font-size: 16px;
+        //           font-weight: 600;
+        //           padding: 8px 14px;
+        //           border: 1px solid #d1d7dc;
+        //           border-radius: 6px;
+        //           background-color: #fff;
+        //           cursor: pointer;
+        //           transition: 0.3s;
+
+        //           &:hover {
+        //             background-color: #f7f9fa;
+        //           }
+        //         }
+        //       }
+        //       :last-child {
+        //         margin-right: 0;
+        //       }
+        //     }
+        //   }
+        // }
+
+        .course_includes {
+          margin-top: 30px;
+
+          h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d2f31;
+            margin-bottom: 15px;
+          }
+
+          .includes_grid {
+            display: flex;
+            gap: 75px;
+
+            ul {
+              list-style: none;
+              padding: 0;
+
+              li {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      .course_content {
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 60px;
+
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: #1c1d1f;
+        }
+
+        .subtitle {
+          font-size: 14px;
+          color: #6a6f73;
+          margin-bottom: 20px;
+        }
+
+        .custom_accordion {
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          overflow: hidden;
+
+          .accordion-item {
+            border: none;
+            border-bottom: 1px solid #eee;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            // Header area
+            .accordion-header {
+              button {
+                background: #f7f9fa;
+                padding: 16px 20px;
+                font-size: 16px;
+                font-weight: 600;
+                width: 100%;
+                text-align: left;
+                box-shadow: none !important;
+
+                &:focus {
+                  outline: none;
+                  box-shadow: none;
+                }
+              }
+            }
+
+            .accordion-header-content {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+
+              h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+                color: #1c1d1f;
+              }
+
+              p {
+                font-size: 13px;
+                color: #6a6f73;
+                margin: 0;
+              }
+            }
+
+            // Body area
+            .accordion-body {
+              background: #fff;
+              padding: 15px 25px;
+              font-size: 14px;
+              color: #444;
+
+              ul {
+                margin: 0;
+                padding-left: 20px;
+
+                li {
+                  margin-bottom: 6px;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .course-info {
+        // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        // line-height: 1.6;
+        // color: #333;
+
+        // .section-title {
+        //   font-size: 22px;
+        //   font-weight: 700;
+        //   margin-bottom: 10px;
+
+        // }
+
+        .requirement {
+          background-color: #f9f9f9;
+          padding: 15px;
+          border-radius: 8px;
+          margin-bottom: 40px;
+
+          h3 {
+            color: black;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+
+          ul {
+            // list-style-type: disc;
+            padding-left: 20px;
+
+            li {
+              margin-left: 20px;
+              margin-bottom: 8px;
+              font-size: 16px;
+              font-weight: 400;
+              list-style: circle;
+            }
+          }
+        }
+
+        // .description {
+        //   background-color: #f9f9f9;
+        //   padding: 20px;
+        //   border-radius: 8px;
+
+        //   h3{
+        //     color: black;
+        //     font-size: 25px;
+        //     font-weight: 700;
+        //     margin-bottom: 20px;
+        //   }
+
+        //   p {
+
+        //     strong {
+        //       font-weight: 600;
+        //       color: #2c3e50;
+        //     }
+        //   }
+        // }
+
+        .description {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 8px;
+          // max-width: 900px;
+          margin: 24px auto;
+
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+          h3 {
+            color: black;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+
+          p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+
+            strong {
+              font-weight: 600;
+              color: #2c3e50;
+            }
+          }
+
+          ul {
+            // list-style: disc !important;
+            padding-left: 20px;
+            margin-top: 0;
+
+            li {
+              margin-bottom: 12px;
+              list-style-type: disc;
+            }
+
+            strong {
+              font-weight: 600;
+              color: #2c3e50;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      float: right;
+      // width: calc(100% - 800px);
+      width: 40%;
+      padding-left: 45px;
+
+      position: sticky;
+      top: 450px;
+
+      .course-container {
+        padding: 12px 15px;
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        max-width: 360px;
+        font-family: Arial, sans-serif;
+        margin-top: -450px;
+        // position: sticky;
+
+        .video-preview {
+          position: relative;
+          width: 100%;
+          height: 200px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          overflow: hidden;
+
+          iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+          }
+
+          .preview-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            pointer-events: none;
+          }
+        }
+
+        .premium-info {
+          color: #6c63ff;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          margin: 10px 0;
+          font-size: 18px;
+        }
+
+        .description {
+          font-size: 14px;
+          color: #444;
+
+          a {
+            color: #5624d0;
+            text-decoration: underline;
+          }
+        }
+
+        .btn {
+          display: block;
+          width: 100%;
+          margin: 10px 0;
+          padding: 10px;
+          font-weight: bold;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .subscribe {
+          background-color: #5624d0;
+          color: #fff;
+        }
+
+        .add-to-cart {
+          background-color: #f0f0f0;
+          color: #000;
+        }
+
+        .buy-now {
+          background-color: #5624d0;
+          color: #fff;
+        }
+
+        .price-note {
+          font-size: 13px;
+
+          .old-price {
+            text-decoration: line-through;
+            color: #999;
+          }
+
+          .new-price {
+            font-weight: bold;
+            color: green;
+          }
+        }
+
+        .cancel-note {
+          font-size: 12px;
+          color: #666;
+        }
+
+        .or-separator {
+          text-align: center;
+          margin: 10px 0;
+          color: #aaa;
+        }
+
+        .price {
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .applied-coupon {
+          p {
+            font-size: 16px;
+            font-weight: 400;
+          }
+
+          .coupon-box {
+            margin-top: 10px;
+
+            input {
+              padding: 7px 15px;
+              margin-right: 25px;
+              max-width: 225px;
+            }
+
+            a {
+              background-color: #5624d0;
+              color: white;
+              padding: 11px 17px;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    &::after {
+      clear: both;
+      display: table;
+      content: "";
+    }
+  }
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .learn_section .inner_parent .right {
+    width: 40%;
+    padding-left: 40px;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+}

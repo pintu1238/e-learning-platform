@@ -1,0 +1,110 @@
+.banner_section {
+  max-height: 500px;
+  img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+
+  .baner_area {
+    display: flex;
+    align-items: center;
+
+    .left_area {
+      float: left;
+      width: 500px;
+
+
+      h1.text {
+        font-size: 50px;
+        font-weight: 700;
+        color: #111;
+
+      }
+    }
+
+    .right_area {
+      float: right;
+      width: calc(100% - 500px);
+
+
+      .img_area{
+        height:100%;
+        width: 600px;
+      }
+    }
+
+  }
+
+  
+}
+
+ .sectiontwo{
+  margin-bottom: 20px;
+     .second{
+    background-color:#111;
+    padding: 20px;
+   
+    .para{
+      text-align: center;
+      .log{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+
+      }
+    }
+  }
+
+ }
+
+ .third {
+    .skills {
+        text-align: center;
+
+        h1.key {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .para {
+           padding: 0 10px 40px;
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+
+            }
+        }
+    }
+}
+
+.for_section {
+    .video_text {
+        display: flex;
+        align-items: center;
+
+        .left_area {
+            float: left;
+            width: 700px;
+        }
+
+        .right_area {
+            float: right;
+            width: calc(100% - 700px);
+
+
+            .text_area h1{
+                font-size: 45px;
+                font-weight: 500;
+            }
+
+            .para p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}

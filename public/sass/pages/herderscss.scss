@@ -1,0 +1,20 @@
+section.header_section {
+    div.inner_area {
+        width: 100%;
+
+        div.left_area {
+            float: left;
+            width: 130px;
+
+            div.logo_area {
+                width: 98px;
+                height: 36px;
+            }
+        }
+
+        div.right_area {
+            width: calc(100% - 130px);
+            float: right;
+        }
+    }
+}

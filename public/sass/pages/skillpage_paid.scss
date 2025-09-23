@@ -1,0 +1,606 @@
+.paid_section {
+  .inner_parent {
+    .video_section {
+      padding: 20px;
+
+      h3 {
+        padding: 10px 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: #111;
+      }
+
+      .content_row {
+        // clearfix for float layout
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .left {
+          float: left;
+          width: 1050px;
+
+          .video_area {
+            width: 100%;
+            height: 460px;
+            background: #000;
+            margin-bottom: 25px;
+
+            iframe {
+              width: 100%;
+              height: 100%;
+              border: none;
+              border-radius: 8px;
+            }
+          }
+          .course-player {
+            .tabs {
+              display: flex;
+              gap: 15px;
+
+              button {
+                padding: 8px 15px;
+                border: none;
+                background: #eee;
+                cursor: pointer;
+                font-weight: 500;
+
+                &.active {
+                  background: #6c63ff;
+                  color: white;
+                  border-radius: 6px;
+                }
+              }
+            }
+
+            .tab-content {
+              margin-top: 20px;
+              padding: 15px;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              margin-bottom: 40px;
+
+              .overview {
+                h3.learn {
+                  color: black;
+                  font-size: 22px;
+                  margin-bottom: 24px;
+                }
+
+                ul {
+                  display: flex;
+                  gap: 20px;
+                  margin-bottom: 14px;
+
+                  li {
+                    span {
+                      display: block;
+                      font-family: var(--font-stack-heading);
+                      font-weight: 700;
+                      line-height: 1.2;
+                      letter-spacing: 0;
+                      font-size: 20px;
+                      margin-bottom: 12px;
+                    }
+
+                    p {
+                      display: block;
+                      // color: oklch(48.09% 0.0371 279.08deg);
+                      font-size: 14px;
+                    }
+                  }
+                }
+
+                div.area {
+                  margin-bottom: 14px;
+
+                  div.row_Area {
+                    margin-bottom: 14px;
+
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+
+                    .icon {
+                      font-size: 12px;
+                      color: black;
+                      margin-right: 12px;
+                      display: inline-block;
+
+                      &:last-child {
+                        margin-right: 0;
+                      }
+                    }
+
+                    p {
+                      font-size: 14px;
+                      color: black;
+                      display: inline-block;
+                      font-weight: 400;
+                    }
+                  }
+                }
+
+                div.card_area {
+                  padding: 15px;
+                  border-radius: 15px;
+                  border: 1px solid #ddd;
+                  // display: flex;
+                  &::after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
+
+                  div.card_left {
+                    width: 50px;
+                    float: left;
+                    margin-top: 20px;
+
+                    .clockIcon {
+                      font-size: 25px;
+                      color: black;
+                    }
+                  }
+
+                  div.card_right {
+                    width: calc(100% - 50px);
+                    float: right;
+                    display: flex;
+                    align-items: start;
+
+                    div.contant_area {
+                      h3.learning {
+                        font-weight: 700;
+                        letter-spacing: 0;
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                      }
+
+                      p.p_learning {
+                        font-family: var(--font-stack-heading);
+                        font-weight: 400;
+                        line-height: 1.2;
+                        letter-spacing: 0;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                      }
+
+                      ul {
+                        display: flex;
+                        gap: 20px;
+                        margin: 0;
+                        li {
+                          a {
+                            display: inline-block;
+                            cursor: pointer;
+                            border: 1px solid transparent;
+                            color: rgb(109, 41, 211);
+                            padding: 10px;
+                            font-size: 16px;
+                            min-width: 110px;
+                            text-align: center;
+                            border-radius: 10px;
+                            &:hover {
+                              border: 1px solid rgb(109, 41, 211);
+                              background-color: rgb(222, 207, 244);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .student-feedback {
+                margin-top: 20px;
+
+                h3 {
+                  font-size: 20px;
+                  font-weight: 700;
+                  margin-bottom: 20px;
+                }
+
+                .feedback-summary {
+                  display: flex;
+                  gap: 40px;
+
+                  .rating-left {
+                    width: 120px;
+                    text-align: center;
+
+                    .rating-value {
+                      font-size: 48px;
+                      font-weight: 700;
+                      color: #cc6b0f;
+                      margin: 0;
+                    }
+
+                    .stars p {
+                      font-size: 15px;
+                      color: #cc6b0f;
+                      margin: 4px 0;
+                    }
+
+                    .course-rating-text {
+                      font-size: 14px;
+                      font-weight: 600;
+                      color: #cc6b0f;
+                    }
+                  }
+
+                  .rating-bars {
+                    flex: 1;
+
+                    .rating-row {
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 10px;
+
+                      .progress-bar {
+                        width: 60%;
+                        height: 8px;
+                        background-color: #ddd;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        margin-right: 15px;
+
+                        .fill {
+                          height: 100%;
+                          background-color: #5c5b82;
+                        }
+                      }
+
+                      .rating-label {
+                        p {
+                          margin: 0;
+                          font-size: 14px;
+                          display: flex;
+                          align-items: center;
+                          gap: 5px;
+
+                          .percent {
+                            color: purple;
+                            text-decoration: none;
+
+                            &:hover {
+                              text-decoration: underline;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          float: right;
+          width: calc(100% - 1070px); // 800px + margin
+          padding-left: 20px;
+          // max-height: 460px;
+          overflow-y: auto;
+
+          h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+
+          .accordion {
+            .accordion-item {
+              border: 1px solid #e0e0e0;
+              border-radius: 6px;
+              margin-bottom: 18px;
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+              .accordion-header {
+                font-weight: 600;
+                background-color: #f8f9fa;
+
+                .accordion-button {
+                  color: black;
+                  background-color: #f8f9fa;
+                  padding: 12px 16px;
+                  font-size: 16px;
+                  font-weight: 400;
+
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+              }
+
+              .accordion-body {
+                padding: 0 16px 10px;
+
+                .lecture-list {
+                  list-style: none;
+                  padding: 0;
+                  margin: 10px 0;
+
+                  li {
+                    padding: 8px 12px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: background 0.2s;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    &:hover {
+                      background-color: #eee;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .paid_section {
+    .inner_parent {
+      .video_section {
+        .content_row {
+          .left {
+            float: left;
+            width: 935px;
+
+            .course-player .tab-content .overview h3.learn {
+              margin-bottom: 22px;
+              font-size: 20px;
+            }
+          }
+          .right {
+            float: right;
+            width: calc(100% - 935px);
+            padding-left: 20px;
+            overflow-y: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .paid_section {
+    .inner_parent {
+      .video_section {
+        .content_row {
+          .left {
+            float: left;
+            width: 880px;
+
+            .course-player .tab-content {
+              margin-bottom: 30px;
+
+              .overview {
+                h3.learn {
+                  margin-bottom: 22px;
+                  font-size: 20px;
+                }
+                div.card_area div.card_right div.contant_area h3.learning {
+                  margin-bottom: 10px;
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          .right {
+            float: right;
+            width: calc(100% - 880px);
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .paid_section {
+    .inner_parent {
+      .video_section {
+        .content_row {
+          .left {
+            float: left;
+            width: 810px;
+
+            .video_area {
+              background: #000;
+              width: 100%;
+              height: 440px;
+              margin-bottom: 25px;
+            }
+
+            .course-player .tab-content {
+              margin-bottom: 30px;
+
+              .tabs button {
+                padding: 6px 12px;
+              }
+
+              .overview {
+                h3.learn {
+                  margin-bottom: 22px;
+                  font-size: 20px;
+                }
+                div.card_area div.card_right div.contant_area h3.learning {
+                  margin-bottom: 10px;
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          .right {
+            float: right;
+            width: calc(100% - 810px);
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .paid_section {
+    .inner_parent {
+      .video_section {
+        padding: 0;
+        .content_row {
+          .left {
+            float: left;
+            width: 660px;
+
+            .video_area {
+              background: #000;
+              width: 100%;
+              height: 370px;
+              margin-bottom: 25px;
+            }
+
+            .course-player .tab-content {
+              margin-bottom: 30px;
+
+              .tabs button {
+                padding: 6px 12px;
+              }
+
+              .overview {
+                h3.learn {
+                  margin-bottom: 22px;
+                  font-size: 20px;
+                }
+                div.card_area div.card_right div.contant_area h3.learning {
+                  margin-bottom: 10px;
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          .right {
+            float: right;
+            width: calc(100% - 660px);
+            padding-left: 20px;
+
+            .accordion {
+              .accordion-item {
+                .accordion-header {
+                  .accordion-button {
+                    color: #000;
+                    background-color: #f8f9fa;
+                    padding: 8px 12px;
+                    font-size: 16px;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .paid_section {
+    .inner_parent {
+      .video_section {
+        padding: 0;
+        .content_row {
+          .left {
+            float: left;
+            width: 660px;
+
+            .video_area {
+              background: #000;
+              width: 100%;
+              height: 370px;
+              margin-bottom: 25px;
+            }
+
+            .course-player .tab-content {
+              margin-bottom: 30px;
+
+              .tabs button {
+                padding: 6px 12px;
+              }
+
+              .overview {
+                h3.learn {
+                  margin-bottom: 22px;
+                  font-size: 20px;
+                }
+                div.card_area div.card_right div.contant_area h3.learning {
+                  margin-bottom: 10px;
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          .right {
+            float: right;
+            width: calc(100% - 660px);
+            padding-left: 20px;
+
+            .accordion {
+              .accordion-item {
+                .accordion-header {
+                  .accordion-button {
+                    color: #000;
+                    background-color: #f8f9fa;
+                    padding: 8px 12px;
+                    font-size: 16px;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+}

@@ -1,0 +1,513 @@
+.career_banner {
+  background-color: orange;
+  margin-bottom: 40px;
+  .inner_area {
+    position: relative;
+    padding: 40px 0;
+    min-height: 400px;
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .left_area {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      background-color: white;
+      float: left;
+      width: 760px;
+      height: 100%;
+      padding-right: 30px;
+
+      .course_detail_card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        h2 {
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 15px;
+          color: #222;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #555;
+          // margin-bottom: 50px;
+        }
+
+        .stats_row {
+          margin: 20px 0;
+          ul {
+            li {
+              display: inline-block;
+              margin-right: 25px;
+
+              .star_icon {
+                display: inline-block;
+                color: gold;
+                font-size: 18px;
+                margin-right: 6px;
+              }
+
+              h3 {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 600;
+                margin-right: 5px;
+                color: #222;
+              }
+
+              p {
+                font-size: 14px;
+                color: #666;
+              }
+            }
+          }
+        }
+
+        .price_row {
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .start_btn {
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background: #0056b3;
+            }
+          }
+
+          .price {
+            h3 {
+              font-size: 24px;
+              font-weight: 700;
+              color: #222;
+              display: inline-block;
+              margin-right: 10px;
+            }
+
+            .old_price {
+              display: inline-block;
+              font-size: 16px;
+              color: #888;
+              text-decoration: line-through;
+            }
+          }
+        }
+
+        .enrolled {
+          font-size: 14px;
+          color: #444;
+
+          svg {
+            display: inline-block;
+            margin-right: 6px;
+            color: #555;
+          }
+
+          span {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    .right_area {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      float: right;
+      // height: 400px;
+      height: 100%;
+      width: calc(100% - 760px);
+      // border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+
+      .image_area {
+        width: 100%;
+        height: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+/* Desktop large screens (≥1200px) */
+@media (min-width: 1200px) {
+  .career_banner {
+    .inner_area {
+      display: flex;
+      .left_area {
+        width: 600px;
+        height: auto;
+        .course_detail_card {
+          h2 {
+            font-size: 32px;
+          }
+          p {
+            font-size: 16px;
+            // margin-bottom: 50px;
+          }
+          .stats_row ul li h3 {
+            font-size: 20px;
+          }
+          .stats_row ul li p {
+            font-size: 14px;
+          }
+          .price_row .start_btn {
+            font-size: 16px;
+            padding: 12px 25px;
+          }
+          .price_row .price h3 {
+            font-size: 24px;
+          }
+          .price_row .price .old_price {
+            font-size: 16px;
+          }
+          .enrolled {
+            font-size: 14px;
+          }
+        }
+      }
+      .right_area {
+        width: calc(100% - 600px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .career_banner {
+    .inner_area {
+      display: flex;
+      // align-items: stretch;
+
+      .left_area {
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right_area {
+        width: calc(100% - 500px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .career_banner {
+    .inner_area {
+      display: flex;
+      align-items: stretch;
+
+      .left_area {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        // height: auto;
+        padding-right: 10px;
+      }
+
+      .right_area {
+        width: calc(100% - 450px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-left: 5px;
+
+        .image_area {
+          width: 100%;
+          height: 100%;
+          // max-height: 400px;
+          // object-fit: cover;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .career_banner {
+    .inner_area {
+      display: block;
+
+      .left_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+        margin-bottom: 15px;
+      }
+
+      .right_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+
+        .image_area {
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 361px) and (min-width: 361px) {
+  .career_banner {
+    .inner_area {
+      display: block;
+
+      .left_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+        margin-bottom: 15px;
+      }
+
+      .right_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+
+        .image_area {
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) and (min-width: 321px) {
+  .career_banner {
+    .inner_area {
+      display: block;
+
+      .left_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+        margin-bottom: 15px;
+      }
+
+      .right_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+
+        .image_area {
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .career_banner {
+    .inner_area {
+      display: block;
+
+      .left_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+        margin-bottom: 15px;
+      }
+
+      .right_area {
+        width: 100%;
+        float: none;
+        padding: 0;
+        // height: auto;
+        border-radius: 12px;
+
+        .image_area {
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+// .career_banner {
+//   background-color: orange;
+//   .inner_area {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 40px;
+
+//     .course_detail_card {
+//       background: #fff;
+//       padding: 30px;
+//       border-radius: 12px;
+//       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+//       width: 700px;
+
+//       h2 {
+//         font-size: 32px;
+//         font-weight: 700;
+//         margin-bottom: 15px;
+//         color: #222;
+//       }
+
+//       p {
+//         font-size: 16px;
+
+//         color: #555;
+//         margin-bottom: 50px;
+//       }
+
+//       .stats_row {
+//         margin: 20px 0;
+
+//         ul {
+//           // display: flex;
+//           // gap: 25px;
+
+//           li {
+//             display: inline-block;
+//             margin-right: 20px;
+
+//             &:last-child {
+//               margin-right: 0;
+//             }
+
+//             .star_icon {
+//               display: inline-block;
+//               color: gold;
+//               font-size: 18px;
+//               // margin-bottom: 4px;
+//               margin-right: 10px;
+//             }
+
+//             h3 {
+//               font-size: 20px;
+//               font-weight: 600;
+//               color: #222;
+//               display: inline-block;
+//             }
+
+//             p {
+//               font-size: 14px;
+//               color: #666;
+//             }
+//           }
+//         }
+//       }
+
+//       .price_row {
+//         margin-bottom: 20px;
+//         display: flex;
+//         align-items: center;
+//         gap: 20px;
+
+//         .start_btn {
+//           padding: 12px 25px;
+//           font-size: 16px;
+//           font-weight: 600;
+//           border: none;
+//           border-radius: 8px;
+//           background: #007bff;
+//           color: #fff;
+//           cursor: pointer;
+//           transition: all 0.3s ease;
+
+//           &:hover {
+//             background: #0056b3;
+//           }
+//         }
+
+//         .price {
+//           h3 {
+//             font-size: 24px;
+//             font-weight: 700;
+//             color: #222;
+//             display: inline-block;
+//             margin-right: 10px;
+//           }
+
+//           .old_price {
+//             font-size: 16px;
+//             color: #888;
+//             text-decoration: line-through;
+//           }
+//         }
+//       }
+
+//       .enrolled {
+//         font-size: 14px;
+//         color: #444;
+
+//         svg {
+//           margin-right: 6px;
+//           color: #555;
+//         }
+//       }
+//     }
+
+//     .image_area {
+//       background-color: white;
+//       width: calc(100% - 700px);
+//       border-radius: 12px;
+//       overflow: hidden;
+//     }
+//   }
+// }

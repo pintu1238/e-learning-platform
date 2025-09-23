@@ -1,0 +1,814 @@
+$primary-color: rgb(109, 40, 210);
+$secondary-color: #000;
+$white: #fff;
+$text-color: #000;
+$gray: grey;
+$link-color: rgb(109, 40, 210);
+$border-radius: 5px;
+$transition: all 0.3s ease-in-out;
+$heading-font: var(--font-stack-heading);
+$text-font: var(--font-stack-text);
+
+section.signup div.loginArea div.right div.contant div.other div.option p {
+    display: inline-block;
+}
+
+section.signup {
+    div.loginArea {
+        padding: 65px 0;
+        display: flex;
+        align-items: center;
+
+        div.left {
+            width: 750px;
+            float: left;
+
+            div.left_img {
+                height: 700px;
+                width: 600px;
+            }
+
+            div.media_upr {
+                display: none;
+            }
+        }
+
+        div.right {
+            width: calc(100% - 750px);
+            float: right;
+            display: flex;
+            justify-content: center;
+
+            div.contant {
+                width: 100%;
+
+                h1.auth_form_heading {
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    font-size: 38px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                // .form-div {
+                //     margin-bottom: 16px;
+
+                //     .name,
+                //     .email {
+                //         margin-bottom: 16px;
+
+                //         input {
+                //             font-family: $heading-font;
+                //             font-weight: 700;
+                //             font-size: 16px;
+                //             padding: 12px 15px;
+                //             border: 1px solid $secondary-color;
+                //             border-radius: $border-radius;
+                //             margin-bottom: 16px;
+
+                //             &:focus {
+                //                 outline: $gray;
+                //             }
+                //         }
+                //     }
+
+                //     .check-box {
+                //         margin-bottom: 14px;
+
+                //         .form-check {
+                //             display: flex;
+                //             align-items: start;
+                //             gap: 12px;
+                //         }
+
+                //         #formBasicCheckbox {
+                //             font-weight: 400;
+                //             font-size: 14px;
+                //             line-height: 31px;
+                //         }
+                //     }
+
+                //     .continue {
+                //         width: 100%;
+                //         padding: 12px;
+                //         background-color: $primary-color;
+                //         border: 1px solid transparent;
+                //         font-family: $heading-font;
+                //         font-weight: 700;
+                //         font-size: 16px;
+                //         border-radius: $border-radius;
+                //         color: $white;
+                //         transition: $transition;
+
+                //         &:hover {
+                //             background-color: darken($primary-color, 8%);
+                //         }
+                //     }
+                // }
+                .form-div {
+                    margin-bottom: 16px;
+
+                    .name,
+                    .email,
+                    .password,
+                    .confirm-password {
+                        margin-bottom: 16px;
+
+                        input {
+                            font-family: $heading-font;
+                            font-weight: 700;
+                            font-size: 16px;
+                            padding: 12px 15px;
+                            border: 1px solid $secondary-color;
+                            border-radius: $border-radius;
+                            margin-bottom: 16px;
+
+                            &:focus {
+                                outline: $gray;
+                            }
+                        }
+                    }
+
+                    .check-box {
+                        margin-bottom: 14px;
+
+                        .form-check {
+                            display: flex;
+                            align-items: start;
+                            gap: 12px;
+                        }
+
+                        #formBasicCheckbox {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 31px;
+                        }
+                    }
+
+                    .continue {
+                        width: 100%;
+                        padding: 12px;
+                        background-color: $primary-color;
+                        border: 1px solid transparent;
+                        font-family: $heading-font;
+                        font-weight: 700;
+                        font-size: 16px;
+                        border-radius: $border-radius;
+                        color: $white;
+                        transition: $transition;
+
+                        &:hover {
+                            background-color: darken($primary-color, 8%);
+                        }
+                    }
+                }
+
+
+                div.separator_module {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 24px;
+
+                    div.line_hr {
+                        height: 1px;
+                        background-color: $gray;
+                        position: absolute;
+                        width: 100%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: -1;
+                    }
+
+                    h3.other_option {
+                        font-size: 16px;
+                        background-color: $white;
+                        color: $gray;
+                        min-width: 160px;
+                        text-align: center;
+                    }
+                }
+
+                div.icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-bottom: 24px;
+
+                    div.icon_parent {
+                        min-height: 45px;
+                        min-width: 45px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $primary-color;
+                        background-color: $white;
+                        border-radius: 3px;
+
+                        &:hover {
+                            background-color: rgb(229, 219, 229);
+                        }
+
+                        .fontAwsm {
+                            font-size: 22px;
+                        }
+
+                        .facebook {
+                            color: $link-color;
+                        }
+
+                        .apple {
+                            color: $secondary-color;
+                        }
+                    }
+                }
+
+                div.other {
+                    div.option {
+                        padding: 16px 0;
+                        text-align: center;
+                        background-color: rgb(224, 224, 224);
+                        border-bottom: 1px solid $secondary-color;
+
+                        &:last-child {
+                            border: none;
+                        }
+
+                        p {
+                            font-family: $text-font;
+                            font-size: 18px;
+                            color: $secondary-color;
+                        }
+
+                        a.sign_up {
+                            font-family: $text-font;
+                            font-size: 18px;
+                            color: $link-color;
+                            text-decoration: underline;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    section.signup {
+        div.loginArea {
+            div.left {
+                width: 650px;
+
+                div.left_img {
+                    width: 580px;
+                    height: 600px;
+                }
+            }
+
+            div.right {
+                width: calc(100% - 650px);
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 36px;
+                        margin-bottom: 27px;
+                    }
+
+                    div.other {
+                        div.option {
+
+                            p,
+                            a.sign_up {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.signup {
+        div.loginArea {
+            div.left {
+                width: 500px;
+
+                div.left_img {
+                    width: 475px;
+                    height: 500px;
+                }
+            }
+
+            div.right {
+                width: calc(100% - 500px);
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 33px;
+                        margin-bottom: 22px;
+                    }
+
+                    .form-div {
+                        .continue {
+                            font-size: 15px;
+                        }
+
+                        .name input,
+                        .email input {
+                            font-size: 14px;
+                            font-weight: 600;
+                            padding: 12px;
+                        }
+
+                        .check-box {
+
+                            #formBasicCheckbox,
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 20px;
+
+                        h3.other_option {
+                            font-size: 14px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 16px;
+                        margin-bottom: 20px;
+
+                        div.icon_parent {
+                            min-width: 38px;
+                            min-height: 38px;
+
+                            .fontAwsm {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+
+                            p,
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    section.signup {
+        div.loginArea {
+            div.left {
+                float: left;
+                width: 400px;
+
+                div.left_img {
+                    width: 380px;
+                    height: 420px;
+                }
+            }
+
+            div.right {
+                width: calc(100% - 400px);
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 28px;
+                        margin-bottom: 18px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 14px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 14px;
+
+                            #formBasicEmail {
+                                margin-bottom: 14px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 14px;
+
+                            #formBasicPassword {
+                                margin-bottom: 14px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 14px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 18px;
+
+                        h3.other_option {
+                            font-size: 14px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 18px;
+                        margin-bottom: 18px;
+
+                        div.icon_parent {
+                            min-width: 38px;
+                            min-height: 38px;
+
+                            .fontAwsm {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 14px;
+
+                            p {
+                                font-size: 16px;
+                            }
+
+                            a.sign_up {
+                                font-size: 16px;
+                            }
+
+                            p,
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    section.signup {
+        div.loginArea {
+            display: block;
+            width: 100%;
+
+            div.left {
+                width: 100%;
+                margin-bottom: 15px;
+
+                div.left_img {
+                    width: 100%;
+                    height: 530px;
+                }
+            }
+
+            div.right {
+                float: none;
+                width: 100%;
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 24px;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 12px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 12px;
+
+                            #formBasicEmail {
+                                margin-bottom: 12px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 12px;
+
+                            #formBasicPassword {
+                                margin-bottom: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 12px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 15px;
+
+                        h3.other_option {
+                            font-size: 13px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 15px;
+                        margin-bottom: 15px;
+
+                        div.icon_parent {
+                            min-width: 30px;
+                            min-height: 30px;
+
+                            .fontAwsm {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    section.signup {
+        div.loginArea {
+            display: block;
+
+            div.left {
+                width: 100%;
+
+                div.left_img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+
+            div.right {
+                float: none;
+                width: 100%;
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 21px;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 12px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 12px;
+
+                            #formBasicEmail {
+                                margin-bottom: 12px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 12px;
+
+                            #formBasicPassword {
+                                margin-bottom: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 12px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 13px;
+
+                        h3.other_option {
+                            font-size: 12px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 14px;
+                        margin-bottom: 14px;
+
+                        div.icon_parent {
+                            min-width: 30px;
+                            min-height: 30px;
+
+                            .fontAwsm {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    section.signup {
+        div.loginArea {
+            display: block;
+
+            div.left {
+                width: 100%;
+
+                div.left_img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+
+
+            div.right {
+                float: none;
+                width: 100%;
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 21px;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 12px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 12px;
+
+                            #formBasicEmail {
+                                margin-bottom: 12px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 12px;
+
+                            #formBasicPassword {
+                                margin-bottom: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 12px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 13px;
+
+                        h3.other_option {
+                            font-size: 12px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 14px;
+                        margin-bottom: 14px;
+
+                        div.icon_parent {
+                            min-width: 30px;
+                            min-height: 30px;
+
+                            .fontAwsm {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
+
+/* Smaller phones */
+@media (max-width: 320px) {}

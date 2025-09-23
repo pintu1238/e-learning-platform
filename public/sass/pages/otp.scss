@@ -1,0 +1,689 @@
+$primary-color: rgb(109, 40, 210);
+$secondary-color: #000;
+$text-color: #000;
+$white: #fff;
+$heading-font: var(--font-stack-heading);
+$text-font: var(--font-stack-text);
+$border-radius: 5px;
+$transition: all 0.3s ease-in-out;
+
+section.otp {
+    div.loginArea {
+        padding: 65px 0;
+        display: flex;
+        align-items: center;
+
+        div.left {
+            width: 750px;
+            float: left;
+
+            div.left_img {
+                height: 700px;
+                width: 600px;
+            }
+
+            div.media_upr {
+                display: none;
+            }
+        }
+
+        div.right {
+            width: calc(100% - 750px);
+            float: right;
+            display: flex;
+            justify-content: center;
+
+            div.contant {
+                width: 100%;
+
+                h1.auth_form_heading {
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    font-size: 34px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                p.emmail_details {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+
+                .form-div {
+                    margin-bottom: 16px;
+
+                    .code-number {
+                        margin-bottom: 16px;
+
+                        #formBasicPassword {
+                            font-family: $heading-font;
+                            font-weight: 700;
+                            font-size: 16px;
+                            padding: 12px 15px;
+                            border: 1px solid $text-color;
+                            border-radius: $border-radius;
+                            margin-bottom: 16px;
+
+                            &:focus {
+                                outline: grey;
+                            }
+                        }
+                    }
+
+                    .continue {
+                        width: 100%;
+                        padding: 12px;
+                        background-color: $primary-color;
+                        border: 1px solid transparent;
+                        font-family: $heading-font;
+                        font-weight: 700;
+                        font-size: 16px;
+                        border-radius: $border-radius;
+                        color: $white;
+                        transition: $transition;
+
+                        &:hover {
+                            background-color: darken($primary-color, 10%);
+                        }
+                    }
+                }
+
+                div.other {
+                    div.option {
+                        padding: 12px;
+                        text-align: center;
+
+                        a.resend {
+                            display: inline-block;
+                            font-family: $text-font;
+                            font-size: 14px;
+                            color: rgb(109, 40, 210);
+                            text-decoration: underline;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    section.otp {
+        div.loginArea {
+            div.left {
+                width: 650px;
+
+                div.left_img {
+                    width: 580px;
+                    height: 600px;
+                }
+            }
+
+            div.right {
+                width: calc(100% - 650px);
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 36px;
+                        margin-bottom: 27px;
+                    }
+
+                    div.other {
+                        div.option {
+
+                            p,
+                            a.sign_up {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.otp {
+        div.loginArea {
+            div.left {
+                float: left;
+                width: 500px;
+
+                div.left_img {
+                    width: 475px;
+                    height: 500px;
+                }
+            }
+
+            div.right {
+                width: calc(100% - 500px);
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 33px;
+                        margin-bottom: 22px;
+                    }
+
+                    .form-div {
+                        .continue {
+                            font-size: 15px;
+                        }
+
+                        .name {
+                            #formBasicEmail {
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .email {
+                            #formBasicPassword {
+                                font-weight: 600;
+                            }
+                        }
+
+                        .check-box {
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 20px;
+
+                        h3.other_option {
+                            font-size: 14px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 16px;
+                        margin-bottom: 20px;
+
+                        div.icon_parent {
+                            min-width: 38px;
+                            min-height: 38px;
+
+                            .fontAwsm {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            p {
+                                font-size: 16px;
+                            }
+
+                            a.sign_up {
+                                font-size: 16px;
+                            }
+
+                            p,
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    section.otp {
+        div.loginArea {
+            div.left {
+                float: left;
+                width: 400px;
+
+                div.left_img {
+                    width: 380px;
+                    height: 420px;
+                }
+            }
+
+            div.right {
+                width: calc(100% - 400px);
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 28px;
+                        margin-bottom: 18px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 14px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 14px;
+
+                            #formBasicEmail {
+                                margin-bottom: 14px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 14px;
+
+                            #formBasicPassword {
+                                margin-bottom: 14px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 14px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 18px;
+
+                        h3.other_option {
+                            font-size: 14px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 18px;
+                        margin-bottom: 18px;
+
+                        div.icon_parent {
+                            min-width: 38px;
+                            min-height: 38px;
+
+                            .fontAwsm {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 14px;
+
+                            p {
+                                font-size: 16px;
+                            }
+
+                            a.sign_up {
+                                font-size: 16px;
+                            }
+
+                            p,
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    section.otp {
+        div.loginArea {
+            display: block;
+            width: 100%;
+
+            div.left {
+                width: 100%;
+                margin-bottom: 15px;
+
+                div.left_img {
+                    width: 100%;
+                    height: 530px;
+                }
+            }
+
+            div.right {
+                float: none;
+                width: 100%;
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 24px;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 12px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 12px;
+
+                            #formBasicEmail {
+                                margin-bottom: 12px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 12px;
+
+                            #formBasicPassword {
+                                margin-bottom: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 12px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 15px;
+
+                        h3.other_option {
+                            font-size: 13px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 15px;
+                        margin-bottom: 15px;
+
+                        div.icon_parent {
+                            min-width: 30px;
+                            min-height: 30px;
+
+                            .fontAwsm {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    section.otp {
+        div.loginArea {
+            display: block;
+            // width: 100%;
+
+            div.left {
+                width: 100%;
+
+                div.left_img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+
+
+            div.right {
+                float: none;
+                width: 100%;
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 21px;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 12px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 12px;
+
+                            #formBasicEmail {
+                                margin-bottom: 12px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 12px;
+
+                            #formBasicPassword {
+                                margin-bottom: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 12px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 13px;
+
+                        h3.other_option {
+                            font-size: 12px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 14px;
+                        margin-bottom: 14px;
+
+                        div.icon_parent {
+                            min-width: 30px;
+                            min-height: 30px;
+
+                            .fontAwsm {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    section.otp {
+        div.loginArea {
+            display: block;
+            // width: 100%;
+
+            div.left {
+                width: 100%;
+
+                div.left_img {
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+
+            div.right {
+                float: none;
+                width: 100%;
+
+                div.contant {
+                    h1.auth_form_heading {
+                        font-size: 21px;
+                        margin-bottom: 15px;
+                    }
+
+                    .form-div {
+                        margin-bottom: 12px;
+
+                        .continue {
+                            font-size: 14px;
+                        }
+
+                        .name {
+                            margin-bottom: 12px;
+
+                            #formBasicEmail {
+                                margin-bottom: 12px;
+                                padding: 12px;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .email {
+                            margin-bottom: 12px;
+
+                            #formBasicPassword {
+                                margin-bottom: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .check-box {
+                            margin-bottom: 12px;
+
+                            #formBasicCheckbox {
+                                font-size: 12px;
+                            }
+
+                            .form-check-label {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    div.separator_module {
+                        margin-bottom: 13px;
+
+                        h3.other_option {
+                            font-size: 12px;
+                        }
+                    }
+
+                    div.icons {
+                        gap: 14px;
+                        margin-bottom: 14px;
+
+                        div.icon_parent {
+                            min-width: 30px;
+                            min-height: 30px;
+
+                            .fontAwsm {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    div.other {
+                        div.option {
+                            padding: 12px;
+
+                            p {
+                                font-size: 14px;
+                            }
+
+                            a.sign_up {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}

@@ -1,0 +1,20 @@
+.case_studies{
+    display: flex;
+   text-align: center;
+    padding: 80px 20px;
+    .case_intro{
+        
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            color: #111;
+            margin-bottom: 20px;
+        }
+        .learn_more{
+            background-color: #111;
+            color: #fff;
+            padding: 10px;
+            min-width: 120px;
+        }
+    }
+}

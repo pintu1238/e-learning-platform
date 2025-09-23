@@ -1,0 +1,53 @@
+  // .five{
+  //   display: flex;
+  //   align-items: center;
+  //   .impact{
+
+  //   }
+  // }
+
+  .impact-section {
+  background: #4b1fe2; // purple background
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+
+  .impact {
+    max-width: 800px;
+    margin: 0 auto 50px;
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    justify-items: center;
+
+    .tag {
+      .number {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+        display: block;
+      }
+
+      .label {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 8px;
+        display: block;
+      }
+    }
+  }
+}

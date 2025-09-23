@@ -1,0 +1,54 @@
+section.blogs {
+    background-color: #f6f9fb;
+
+    div.inner_blogs {
+        min-height: 500px;
+        height: 100%;
+
+        div.left {
+            float: left;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            width: calc(100% - 550px);
+
+            div.contant {
+                width: 400px;
+
+                h1 {
+                    font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                    font-size: 48px;
+                    margin-bottom: 24px;
+                    font-weight: 700;
+                    color: #1c1d1f;
+                }
+                
+                p.contant_heading {
+                    font-family: "Suisse Works", Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                    font-size: 19px;
+                    // margin-bottom: 24px;
+                    // color: #dce4f4;
+                    color: #1c1d1f;
+                    font-weight: 500;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    div.right {
+        float: right;
+        width: 550px;
+
+        div.banner_img {
+            height: 450px;
+            width: 470px;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
