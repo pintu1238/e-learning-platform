@@ -2,6 +2,9 @@
 
 A modern, responsive learning management system built with Next.js 15, React 19, and Bootstrap 5. This platform provides a comprehensive online learning experience with course management, user authentication, and interactive features.
 
+## Live Link:-
+https://e-learning-platform-black.vercel.app/
+
 ## 🚀 Features
 
 ### 🏠 **Homepage & Navigation**
